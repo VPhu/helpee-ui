@@ -8,124 +8,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.header-page {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.logo {
-  display: flex;
-  justify-content: center;
-}
-#logo {
-  width: 65%;
-}
-.search {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #ed4d27;
-  border-radius: 20px;
-  padding: 5px;
-  margin: 25px;
-}
-.search-text {
-margin: 10px;
-width: 100%;
-}
-.button-search {
-  display: flex;
-  justify-content: center;
-  border: none;
-  outline: none;
-}
-#button-header-items-search {
+.banner-2 {
   font-size: 23px;
 
 }
-#button-header-items {
-  font-size: 25px;
-  margin: 5px;
-}
 
-#hamburger-icon {
-  margin: auto 0;
-  display:  none;
-  cursor: pointer;
-}
-#hamburger-icon div {
-  width: 28px;
-  height: 3px;
-  background-color: #ed4d27;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-.open .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-6xp, 6px);
-  transform: rotate(-45deg) translate(-6px, 6px); 
-}
-.open .bar2 {
-  opacity: 0;
-}
-.open .bar3 {
-  -webkit-transform: rotate(45deg) translate(-6px, -8px);
-  transform: rotate(45deg) translate(-6px, -8px);
-}
-.open .mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  list-style: none;
-}
-.open .mobile-menu li {
-  padding: 10px;
-  color: #fff;
-  border-bottom: 2px solid white;
-}
-.mobile-menu {
-  display: none;
-  position: absolute;
-  top: 70px;
-  left: 0;
-  height: calc(100vh - 50px);
-  width: 100%;
-  background-color:#ed4d27 ;
-}
 
-.nav-page {
-  background-color: #ed4d27;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-a {
-  transition: 0.7s ease;
-}
-a:hover {
-  color: grey;
-}
-
-i:hover {
-  transition: 0.3s;
-  transform: scale(1.1);
-}
-.button-header {
-
-}
-
-.banner-img {
-}
-#img-banner {
-  width: 100%;
-}
-
-.main-product {
-  margin: 0 10%;
-}
 img {
   width: 100%;
 }
@@ -300,10 +189,10 @@ a {
   .search-text {
     margin: 10px;
   }
-  #button-header-items {
+  .button-header-items {
     font-size: 30px;  
   }
-  #button-header-items-search {
+  .button-header-items-search {
     font-size: 30px;  
 
   }
