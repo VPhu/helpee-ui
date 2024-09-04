@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.header-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+#logo {
+  width: 55%;
+}
+.search {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ed4d27;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 20px;
+}
+.search-text {
+  margin: 5px;
+  width: 100%;
+  }
+  .button-search {
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+  }
+  #button-header-items-search {
+    font-size: 20px;
+  
+  }
+  #button-header-items {
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display:  none;
+    cursor: pointer;
+  }
+  #hamburger-icon div {
+    width: 28px;
+    height: 3px;
+    background-color: #ed4d27;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6xp, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px); 
+  }
+  .open .bar2 {
+    opacity: 0;
+  }
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    list-style: none;
+  }
+  .open .mobile-menu li {
+    padding: 10px;
+    color: #fff;
+    border-bottom: 2px solid white;
+  }
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color:#ed4d27 ;
+  }
+  
+  .nav-page {
+    background-color: #ed4d27;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+    background-color: #ed4d27;
+    color: #fff;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .footer-container h3 {
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid white;
+    padding: 5px 0;
+  }
+  .footer-column {
+    flex: 1;
+    margin: 0 20px;
+  }
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  .footer-column p {
+    margin-bottom: 8px;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid white;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .footer-container .footer-column:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .footer-container p {
+    width: 100%;
+    font-size: 18px;
+    text-align: center  ;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  a {
+    transition: 0.7s ease;
+  }
+  a:hover {
+    color: grey;
+  }
+  
+  i:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+  }
+  img {
+    width: 100%;
+  }
+  input {
+    border: none;
+    outline: none;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  h2 {
+    color: #ed4d27;
+    padding: 20px;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 500;
+    color: #ed4d27;
+    padding-top: 15px;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+  }
+
+
+  @media screen and (max-width: 960px) {
+    a {
+      font-size: 14px;
+    }
+
+    .footer-container{
+      display: block;
+      text-align: center;
+  
+    }
+    
+  }
+  
+  @media screen and (max-width: 767px) {
+    .button-header {
+      display: none;
+    }
+    #hamburger-icon {
+      display: block;
+    }
+  
+    .search-mobile {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      padding: 5px;
+      margin-top: 20px;
+    }
+    .search-text-mobile {
+      background: transparent;
+      width: 100%;
+    }
+    .button-search-mobile {
+      color: #fff;
+    }
+    .search {
+      display: none;
+    }
+    .top-search-item {
+      padding: 5px;
+    }
+    .top-search-item span{
+      padding-top: 5px;
+    }
+  
+    .header-page {
+      justify-content: space-around;
+    }
+  
+    a {
+      padding: 15px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+  h2 {
+    padding: 10px;
+  }
+  a {
+    padding: 10px;
+  }
+  }
