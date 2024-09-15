@@ -1,0 +1,459 @@
+:root {
+  --color-orange: #ed4d27;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-green-light: #4caf50;
+  --color-gray-light: #ccc;
+  --color-gray: #808080;
+
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: var(--color-white-gray-bgr);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.main-product {
+  padding: 15px;
+  background: var(--color-white);
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1290px;
+}
+
+.banner-2 {
+  background: var(--color-white);
+  margin: 15px 0px;
+  padding: 0 10px;
+  font-size: 23px;
+
+}
+#banner-2 {
+  margin: 10px 0;
+}
+
+/* img {
+  max-width: 100%;
+} */
+.product-category {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+}
+
+.category-items {
+  position: relative;
+  overflow: hidden;
+  background-image: url("../assets/list1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 77, 39, 0.65);
+  color: var(--color-white);
+  clip-path: polygon(0 0, 69% 0, 32% 100%, 0% 100%);
+
+}
+
+.overlay p {
+  max-width: 45%;
+  color: var(--color-white);
+  font-size: 22px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  line-height: 22px;
+}
+
+.top-search {
+  background: var(--color-white);
+  border-radius: 5px;
+}
+
+.top-search-list {
+  display: flex;
+  width: 100%;
+}
+
+.top-search-item {
+  max-width: 20%;
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.top-search-name {
+  color: var(--color-orange);
+  padding-top: 10px;
+}
+
+
+
+.suggest {
+  margin: 0 auto;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.products-item {
+  background: var(--color-white);
+  text-align: center;
+}
+
+.products-img {
+  border: 1px solid var(--color-gray-light);
+}
+
+.products-name {
+  height: 50px;
+}
+
+.bi-cart4 {
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.see-more {
+  width: 15%;
+  margin: 20px auto;
+  background-color: var(--color-orange);
+  text-align: center;
+  color: var(--color-white);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.contact {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  text-align: center;
+}
+
+.icon-contact {
+  width: 60%;
+}
+
+
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+
+
+input {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+.section-header {
+  background: var(--color-white);
+  margin: 10px 0;
+  color: var(--color-orange);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.products-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-orange);
+  padding: 15px 0;
+}
+
+#p-container {
+  text-align: left;
+}
+
+
+@media screen and (min-width: 1240px) {
+  .overlay p {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .top-search-item span {
+    font-size: 18px;
+  }
+
+  .products-list {
+    justify-content: center;
+  }
+
+
+  .product-category {
+    gap: 20px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+    top: 20px;
+    left: 12px;
+    line-height: 16px;
+  }
+
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #logo {
+    width: 55%;
+  }
+
+  .button-header {
+    display: none;
+  }
+
+  .contact {
+    bottom: 15px;
+    right: 10px;
+  }
+
+  #icon-contact {
+    width: 45%;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .search-mobile {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--color-white);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+  }
+
+  .search-text-mobile {
+    background: transparent;
+    width: 100%;
+  }
+
+  .button-search-mobile {
+    color: var(--color-white);
+  }
+
+  .search {
+    display: none;
+  }
+
+  .top-search-item {
+    padding: 5px;
+  }
+
+  .top-search-item span {
+    padding-top: 5px;
+  }
+
+  .header-page {
+    justify-content: space-around;
+  }
+
+  .product-category {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .see-more {
+    width: 20%;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    bottom: 10px;
+    right: 0px;
+  }
+
+  .section-header {
+    padding: 10px;
+  }
+
+  .top-search-item span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .overlay p {
+    font-size: 14px;
+    top: 10px;
+    left: 5px;
+    line-height: 15px;
+  }
+}

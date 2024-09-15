@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cập Nhật Thông Tin</title>
+    <link rel="stylesheet" href="./update-information.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-page">
+            <div class="logo">
+                <a href="../../home-page/index.html"><img id="logo" src="../common/header/assets/image 1.png"
+                        alt="Logo Helpee" /></a>
+            </div>
+            <div class="nav">
+                <a class="help" href="#">Cần trợ giúp?</a>
+            </div>
+        </div>
+    </div>
+    <div class="title-update-info">
+        <div class="container">
+            <h1 class="update-info">Cập nhật thông tin</h1>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="main-content">
+            <p class="welcome-message">
+                Chào mừng bạn đến với Helpee, đây là lần đầu bạn đăng nhập.
+            </p>
+            <p class="welcome-message note">Để đảm bảo sự an toàn và tính bảo mật cho tài khoản, bạn cần đổi mật khẩu mặc định (bên trái). Ngoài ra,
+                dịch vụ cũng cần thiết cung cấp những thông tin cần thiết bên dưới (bên phải).
+            </p>
+
+            <div class="form-container">
+                <form class="form-update form-left">
+                    <h3 class="sub-title">Đổi mật khẩu</h3>
+                    <div class="information">
+                        <label for="old-password">Nhập mật khẩu cũ*:</label>
+                        <input class="enter-info" type="password" id="old-password" required>
+
+                        <label for="new-password">Mật khẩu mới*:</label>
+                        <input class="enter-info" type="password" id="new-password" required>
+
+                        <label for="confirm-password">Nhập lại mật khẩu mới*:</label>
+                        <input class="enter-info" type="password" id="confirm-password" required>
+
+                        <p class="password-note">Sử dụng mật khẩu mạnh, tối thiểu 8 ký tự, có sử dụng chữ hoa, số và ký
+                            tự
+                            đặc biệt</p>
+                    </div>
+                </form>
+
+                <form class="form-update form-right">
+                    <h3 class="sub-title">Cập nhật thông tin</h3>
+                    <div class="information">
+                        <label for="name">Nhập tên chủ hộ*:</label>
+                        <input class="enter-info" type="text" id="name" required>
+
+                        <label for="members">Nhập số lượng thành viên*:</label>
+                        <input class="enter-info" type="number" id="members" required>
+
+                        <label for="phone">Nhập số điện thoại liên lạc chính*:</label>
+                        <input class="enter-info" type="tel" id="phone" required>
+
+                        <label for="address">Nhập địa chỉ nhà cụ thể*:</label>
+                        <input class="enter-info" type="text" id="address" required
+                            placeholder="K199 Pham Văn Đồng,...">
+                    </div>
+                </form>
+            </div>
+            <button class="save-button">Lưu thay đổi</button>
+        </div>
+    </div>  
+
+    <div class="footer">
+        <p class="footer-container">© 2021 Chiến binh Covid - TPDNQ</p>
+    </div>
+</body>
+
+</html>

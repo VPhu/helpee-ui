@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-orange: #ed4d27;
+    --color-orange-light: #FF8053;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: #32CB00;
+    --color-green-light: #4caf50;
+    --color-gray-light: #ccc;
+    --color-gray: #808080;
+    --brick-orange-red: #333;
+
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-white);
+    color: var(--brick-orange-red);
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.header-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+   
+}
+
+#logo {
+    width: 55%;
+    margin-right: 10px;
+}
+
+.help {
+    color: var(--color-orange);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.main-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.update-info {
+    padding: 15px;
+    font-weight: bold;
+
+}
+.title-update-info {
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome-message {
+    color: var(--color-orange);
+    font-weight: bold;
+    font-size: 20px;
+}
+.note {
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: var(--color-orange-light);
+    font-size: 14px;
+}
+
+.form-container {
+    display: grid;
+    margin-bottom: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    text-align: left;
+}
+.form-update {
+    width: 100%;
+    border: 1px solid var(--color-orange);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.sub-title {
+    color: var(--color-white);
+    background: var(--color-orange);
+    margin-bottom: 10px;
+    padding: 12px;
+    font-weight: bold;
+}
+.information {
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.enter-info {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--color-orange);
+    border-radius: 5px;
+}
+
+.password-note {
+    font-size: 12px;
+    color: var(--color-gray);
+    text-align: left;
+}
+
+.save-button {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--color-orange);
+    font-size: 14px;
+}
+
+.footer-container {
+    margin-top: 20px;
+    padding: 25px;
+    background: var(--color-orange);
+    color: var(--color-white);
+}   
+
+
+
+@media screen and (max-width: 767px) {
+   .form-container {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+   }
+   .form-update {
+    margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 460px) {
+    .header-page {
+        display: inline-flex;
+    }
+    .logo {
+        max-width: 70%;
+    }
+    #logo {
+        width: 50%;
+        margin: 0;
+    }
+    .help {
+        font-size: 14px;
+        padding: 0;
+    }
+   
+}

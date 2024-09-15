@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-orange: #ed4d27;
+    --color-orange-light: #FF8053;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: #32CB00;
+    --color-green-light: #4caf50;
+    --color-gray-light: #ccc;
+    --color-gray: #808080;
+    --brick-orange-red: #333;
+
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    background: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1320px;
+}
+
+.header-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 55%;
+    margin-right: 10px;
+}
+
+.help {
+    color: var(--color-orange);
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-grow: 1;
+    background: url('./assets/login-bgr.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.login-container {
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+.input-password {
+    position: relative;
+}
+
+.sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--brick-orange-red);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.enter-info {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-gray-light);
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: var(--color-orange);
+}
+
+.remember-me {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-tick {
+    margin-right: 10px;
+}
+
+.show-password {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: var(--color-gray);
+}
+.show-password:active {
+    color: var(--color-black);
+}
+@media screen and (max-width: 425px) {
+    .main-container {
+        padding: 25px;
+    }
+    .header-page {
+        margin: 0;
+    }
+    
+}
+@media screen and (max-width: 320px) {
+    .login-container {
+        padding: 20px;
+    }
+    .login-btn {
+        font-size: 12px;
+    }
+    
+}
